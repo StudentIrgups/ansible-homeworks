@@ -7,4 +7,4 @@
           msg: "{{ ansible_distribution }}"
       - name: Print fact
         debug:
-          msg: "{{ some_fact }}"
+          msg: "{{ ping }}"
