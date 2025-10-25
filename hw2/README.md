@@ -1,10 +1,6 @@
 ## Решение
-Запустить clickhouse мне так и не удалось. На разных версиях ОС Ubuntu, разные ресурсы ВМ - не работате и всё тут.
 
 ## 5-8
-
-Организаторы курса сами пробовали запускать всё это? См. след. скрин.
-
 ![Figure 1-1](https://github.com/StudentIrgups/ansible-homeworks/blob/main/hw2/images/1.png?raw=true)
 
 ![Figure 1-1](https://github.com/StudentIrgups/ansible-homeworks/blob/main/hw2/images/2.png?raw=true)
