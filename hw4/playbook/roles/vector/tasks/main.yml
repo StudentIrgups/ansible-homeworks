@@ -9,10 +9,14 @@
     - distr
 
 - name: Update apt cache
+  become: true
+  become_method: sudo
   ansible.builtin.apt:
     update_cache: true   
 
 - name: Install vector
+  become: true
+  become_method: sudo
   ansible.builtin.command:
     cmd: "dpkg -i /tmp/vector-{{ vector_version }}.deb"
   changed_when: false
@@ -21,6 +25,8 @@
     - distr    
 
 - name: Deploy vector configuration
+  become: true
+  become_method: sudo
   ansible.builtin.template:
     src: templates/vector.yml.j2
     dest: "{{ vector_config_path }}"

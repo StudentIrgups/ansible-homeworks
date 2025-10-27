@@ -4,4 +4,4 @@ clickhouse_packages:
   - clickhouse-common-static
   - clickhouse-client
   - clickhouse-server
-ansible_os_family: ubuntu
+ansible_os_family: debian
