@@ -1,0 +1,2 @@
+repo_lighthouse: "https://github.com/VKCOM/lighthouse.git"
+dest_lighthouse: "/usr/share/nginx/lighthouse"

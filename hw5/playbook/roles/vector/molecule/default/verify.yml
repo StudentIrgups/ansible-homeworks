@@ -1,0 +1,21 @@
+---
+- name: Verify
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: try to get version of vector
+      ansible.builtin.shell: vector --version | awk '{print $2}'
+      register: version_vector
+
+    - name: Debug version_vector
+      become: true
+      become_method: sudo    
+      debug:
+        msg: "{{version_vector.stdout}}"
+
+    - name: version of vector
+      ansible.builtin.assert:
+        that:
+          - version_vector.stdout == "0.44.0"
+        success_msg: "Version is correct"
+        fail_msg: "Expected version of vector 0.44.0, but found {{ version_vector.stdout }}"

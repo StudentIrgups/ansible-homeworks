@@ -1,0 +1,29 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+  options:
+    D: true
+    vv: true
+lint: |
+  yamllint .
+  ansible-lint
+  flake8
+platforms:
+  - name: instance-fedora35
+    image: docker.io/fedora:35
+    pre_build_image: true
+    roles:
+      - vector
+  - name: super-ubunta
+    image: docker.io/ubuntu:latest
+    pre_build_image: true
+  - name: timberio-vector
+    image: docker.io/timberio/vector:0.10.0-debian
+    pre_build_image: true
+    tmpfs:
+      - /run
+      - /tmp
+verifier:
+  name: ansible
