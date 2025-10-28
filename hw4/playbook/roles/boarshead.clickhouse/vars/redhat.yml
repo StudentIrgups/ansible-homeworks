@@ -1,0 +1,4 @@
+---
+clickhouse_supported: yes
+clickhouse_repo: "https://builds.altinity.cloud/yum-repo/"
+clickhouse_repo_key: "https://builds.altinity.cloud/apt-repo/pubkey.gpg"

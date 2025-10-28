@@ -13,3 +13,7 @@
     scm: git
     version: "v1.0.0"
     name: lighthouse   
+
+  - src: https://github.com/boarshead/ansible-clickhouse.git
+    scm: git
+    name: boarshead_clickhouse

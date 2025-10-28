@@ -13,7 +13,7 @@ data "yandex_compute_image" "ubuntu" {
 }
 
 resource "yandex_compute_instance" "web" {
-  count       = 3
+  count       = 4
   name        = "web${count.index + 1}"
   platform_id = var.vm_platform_id
   allow_stopping_for_update = true

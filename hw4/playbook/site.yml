@@ -17,3 +17,10 @@
   hosts: lighthouse
   roles:
     - lighthouse
+
+- name: Install boarshead.clickhouse
+  hosts: boarshead_clickhouse
+  roles:
+    - boarshead.clickhouse
+  tags:
+    - boarshead.clickhouse  
