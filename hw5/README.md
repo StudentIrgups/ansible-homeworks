@@ -16,3 +16,7 @@ https://github.com/StudentIrgups/ansible-homeworks/blob/molecule_v1.0.0/hw5/READ
 
 ![Figure 1-1](https://github.com/StudentIrgups/ansible-homeworks/blob/main/hw5/images/3.png?raw=true)
 
+https://github.com/StudentIrgups/ansible-homeworks/blob/tox_v1.0.0/hw5/README.md
+
+
+* Контейнер для tox необходимо запускать с volume без symulink.
