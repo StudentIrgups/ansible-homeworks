@@ -1,8 +1,19 @@
 ---
 - name: Converge
-  hosts: all
+  hosts: super-ubunta
   gather_facts: false
   tasks:
     - name: message to test
       ansible.builtin.debug:
         msg: "Testing start"
+    - name: vector install
+      ansible.builtin.include_role:
+        name: vector 
+
+- name: Converge 2
+  hosts: centos8
+  gather_facts: false
+  tasks:
+    - name: message to test
+      ansible.builtin.debug:
+        msg: "Testing start"      
