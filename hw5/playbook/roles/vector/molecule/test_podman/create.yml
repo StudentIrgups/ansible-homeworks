@@ -1,0 +1,8 @@
+---
+- name: Create
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Message
+      ansible.builtin.debug:
+        msg: "This is the effective test"
