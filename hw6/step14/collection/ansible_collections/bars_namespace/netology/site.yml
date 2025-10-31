@@ -1,0 +1,7 @@
+---
+- name: Test module in roles
+  environment:
+    DEFAULT_MODULE_PATH: "/home/alex/hw6/ansible/bars_namespace/netology/plugins/modules"
+  hosts: localhost
+  roles:
+    - site_test

@@ -1,0 +1,8 @@
+---
+- name: Test module in roles
+  hosts: localhost
+  tasks:
+    - name: task to create file
+      bars_namespace.netology.my_own_module:
+        path: "/tmp/newtask"
+        content: "File content during task processc"
