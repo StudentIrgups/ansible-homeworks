@@ -1,0 +1,6 @@
+---
+- name: Example from an Ansible Playbook
+  bars_namespace.netology.my_own_module:
+    path: "/tmp/newrole"
+    content: "Learning ansible suffer python. WHY?"
+  
